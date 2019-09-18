@@ -15,7 +15,7 @@ function App() {
   return (
     <Switch>
       <Route exact path="/" component={HomePage} />
-      <Route exact path="/hats" component={HatsPage} />
+      <Route exact path="/shop/hats" component={HatsPage} />
       <Route render={() => <h1>Page not Found 404</h1>} />
     </Switch>
   );
