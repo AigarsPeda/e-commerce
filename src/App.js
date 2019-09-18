@@ -1,12 +1,23 @@
 import React from "react";
+import { Route, Switch } from "react-router-dom";
 import HomePage from "./pages/homepage/homepage.component";
 import "./App.css";
 
-function App() {
+const HatsPage = () => {
   return (
     <div>
-      <HomePage />
+      <h1>HATS PAGE</h1>
     </div>
+  );
+};
+
+function App() {
+  return (
+    <Switch>
+      <Route exact path="/" component={HomePage} />
+      <Route exact path="/hats" component={HatsPage} />
+      <Route render={() => <h1>Page not Found 404</h1>} />
+    </Switch>
   );
 }
 
