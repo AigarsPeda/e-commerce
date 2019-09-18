@@ -1,4 +1,4 @@
-export const sectionsData = [
+export const SECTIONS_DATA = [
   {
     title: "hats",
     imageUrl: "https://i.ibb.co/cvpntL1/hats.png",
