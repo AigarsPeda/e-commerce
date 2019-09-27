@@ -4,7 +4,9 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { ReactComponent as Logo } from "../../assets/crown.svg";
 import CartIcon from "../cart-icon/cart-icon.component";
+import CartDropdown from "../cart-dropdown/cart-dropdown.component";
 import "./header.styles.scss";
+import CustomButton from "../custom-button/custom-button.component";
 
 const Header = ({ currentUser }) => {
   return (
@@ -19,7 +21,6 @@ const Header = ({ currentUser }) => {
         <Link className="option" to="/contact">
           Contact
         </Link>
-
         {currentUser ? (
           <div className="option" onClick={() => auth.signOut()}>
             Sign Out
@@ -31,6 +32,7 @@ const Header = ({ currentUser }) => {
         )}
         <CartIcon />
       </div>
+      <CartDropdown />
     </div>
   );
 };
