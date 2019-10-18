@@ -53,6 +53,19 @@ export const addCollectionAndDocuments = async (
   return await batch.commit();
 };
 
+export const convertCollectionsSnapshotToMap = collection => {
+  const transformedCollection = collection.docs.map(doc => {
+    const { title, items } = doc.data();
+    return {
+      routeName: encodeURI(title.toLowerCase()),
+      id: doc.id,
+      title: title,
+      items: items
+    };
+  });
+  console.log(transformedCollection);
+};
+
 firebase.initializeApp(config);
 
 export const auth = firebase.auth();
