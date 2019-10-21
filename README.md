@@ -25,4 +25,7 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-![image](Screenshot.png)
+<p align="center">
+  <img src="your_relative_path_here" width="350" title="hover text">
+  <img src="./src/Screenshots/Screenshot2.png" width="350" alt="accessibility text">
+</p>
