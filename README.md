@@ -25,4 +25,6 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-<img src="/src//Screenshots/Screenshot2.png" width="350">
+<p align="center">
+  <img src="/src//Screenshots/Screenshot2.png" width="350">
+</p>
