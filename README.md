@@ -25,4 +25,4 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-![image](src/Screenshots/Screenshot 2019-10-21 at 14.19.09.png)
+![image](Screenshot.png)
